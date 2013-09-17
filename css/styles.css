@@ -1,0 +1,37 @@
+body {
+	background: #eae9e9;
+}
+ul {
+	padding: 0;
+}
+li {
+	list-style-type: none;
+	-webkit-margin-before: 0;
+}
+li:before {
+	content: '\00b7';
+	color: #4ba7b1;
+	font-size: 150px;
+	line-height: 24px;
+	vertical-align: text-bottom;
+	position: relative;
+	top: -4px;
+}
+.row {
+	background: #fff;
+}
+.section {
+	padding-top: 30px;
+}
+.divide_next {
+	width: 100%;
+}
+.text_gray {
+	color: #636464;
+}
+.text_dark_green {
+	color: #47757a;
+}
+.text_light_green {
+	color: #4ba7b1;
+}
