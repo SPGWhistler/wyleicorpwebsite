@@ -20,11 +20,21 @@ li:before {
 .row {
 	background: #fff;
 }
-.section {
+.header {
+	background: #1c2526;
+	padding: 20px 0 20px 0;
+}
+.section_start {
 	padding-top: 30px;
 }
-.divide_next {
+.section_end {
+	padding-bottom: 10px;
+}
+.divide {
 	width: 100%;
+}
+.centered {
+	margin: auto;
 }
 .text_gray {
 	color: #636464;
@@ -34,4 +44,13 @@ li:before {
 }
 .text_light_green {
 	color: #4ba7b1;
+}
+.text_bright_green {
+	color: #96c93f;
+}
+.text_brightish_green {
+	color: #667c41;
+}
+.bullet_green:before {
+	color: #96c93f;
 }
