@@ -17,12 +17,24 @@ li:before {
 	position: relative;
 	top: -4px;
 }
+.jumbotron {
+	background-color: transparent;
+}
 .row {
 	background: #fff;
 }
 .header {
 	background: #1c2526;
 	padding: 20px 0 20px 0;
+	margin-bottom: 0;
+}
+.footer {
+	background: #727272;
+	padding: 20px 0 20px 0;
+	margin-top: 30px;
+}
+.dots {
+	padding-bottom: 10px;
 }
 .section_start {
 	padding-top: 30px;
@@ -36,11 +48,20 @@ li:before {
 .centered {
 	margin: auto;
 }
+.text_centered {
+	text-align: center;
+}
+.text_white {
+	color: #fff;
+}
 .text_gray {
 	color: #636464;
 }
 .text_dark_green {
 	color: #47757a;
+}
+.background_light_green {
+	background-color: #4ba7b1;
 }
 .text_light_green {
 	color: #4ba7b1;
