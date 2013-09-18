@@ -49,8 +49,15 @@ li:before {
 .divide {
 	width: 100%;
 }
+.callout {
+	min-width: 80px;
+}
 .centered {
 	margin: auto;
+}
+.vertical_centered {
+	display: table-cell;
+	vertical-align: middle;
 }
 .clickable {
 	cursor: pointer;
