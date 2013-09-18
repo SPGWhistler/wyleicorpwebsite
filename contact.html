@@ -10,7 +10,8 @@
 			<script src="../../assets/js/html5shiv.js"></script>
 			<script src="../../assets/js/respond.min.js"></script>
 		<![endif]-->
-		<!-- Do not add javascripts here unless really needed - they slow down the page. -->
+		<!-- Do not add javascripts here unless really needed - they slow down the page.
+		-->
 	</head>
 	<body>
 		<!-- Header -->
@@ -19,47 +20,40 @@
 				<img src="images/header_logo.png" class="centered img-responsive" alt="wylei">
 			</div>
 		</div>
-
+		<!-- Back Button -->
+		<div class="login_signup text_centered">
+			<button id="button_back" type="button" class="btn btn-default btn-lg">&lt; Back</button>
+		</div>
 		<div class="container">
 			<!-- Section Start -->
 			<div class="row section_start">
 				<div class="col-md-12 clearfix">
-					<div class="col-xs-3 no-padding">
-						<div class="vertical_centered">
-							<img src="images/callout_diagnose.png" class="callout img-responsive" alt="Diagnose">
-						</div>
-					</div>
-					<div class="col-xs-9">
-						<h1 class="text_light_green"><em>Diagnose</em></h1>
-						<p class="lead text_dark_green">Identify &amp; measure your crucial metrics</p>
-					</div>
-				</div>
-			</div>
-			<div class="row visible-md visible-lg">
-				<div class="col-md-12">
-					<hr>
+						<h1 class="text_light_green"><em>Thanks for your interest in us.</em></h1>
+
+					<p class="lead text_gray">Please provide us with some information and a sales rep will be with you shortly.</p>
 				</div>
 			</div>
 			<div class="row section_end">
 				<div class="clearfix">
-					<div class="col-md-6">
-						<p class="text_dark_green">WYLEI helps you define the Key metrics for your mobile user experience and gives you the capability to track them over time.</p>
+					<div class="col-md-12">
+						<form role="form">
+							<div class="form-group">
+								<label class="sr-only" for="name">name</label>
+								<input type="text" class="form-control" id="name" placeholder="name">
+							</div>
+							<div class="form-group">
+								<label class="sr-only" for="email">email address</label>
+								<input type="text" class="form-control" id="email" placeholder="email address">
+							</div>
+							<div class="form-group">
+								<label class="sr-only" for="phone">phone</label>
+								<input type="text" class="form-control inline" id="phone" placeholder="phone"> (optional)
+							</div>
+							<div>
+								<button id="button_submit" type="submit" class="btn btn-success btn-lg">Submit</button>
+							</div>
+						</form>
 					</div>
-					<div class="hidden-md hidden-lg">
-						<div class="col-md-12">
-							<hr>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<ul>
-							<li class="text_gray">Conduct mobile behavioral research.</li>
-							<li class="text_gray">Learn the intent behind each mobile touch.</li>
-							<li class="text_gray">Develop the right mobile metrics for your business.</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-12">
-					<hr>
 				</div>
 			</div>
 			<div class="row">
@@ -68,18 +62,16 @@
 				</div>
 			</div>
 		</div>
-
 		<!-- Footer -->
 		<div class="jumbotron footer">
 			<div class="container">
 				<img src="images/header_logo.png" class="centered img-responsive" alt="wylei">
 			</div>
 		</div>
-
 		<!-- JavaScripts Here -->
 		<script src="//code.jquery.com/jquery.js"></script>
 		<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-		<script src="js/index.js"></script>
+		<script src="js/contact.js"></script>
 	</body>
 
 </html>

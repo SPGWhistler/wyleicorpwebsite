@@ -35,6 +35,7 @@ button {
 	background: #727272;
 	padding: 20px 0 20px 0;
 	margin-top: 30px;
+	margin-bottom: 0;
 }
 .dots {
 	padding-bottom: 10px;
@@ -91,4 +92,11 @@ button {
 }
 .text_brightish_green {
 	color: #667c41;
+}
+.login_signup {
+	margin: 30px 0 30px 0;
+}
+.inline {
+	display: inline;
+	width: 50%;
 }
