@@ -36,6 +36,10 @@ li:before {
 .dots {
 	padding-bottom: 10px;
 }
+.video_container {
+	display: none;
+	position: absolute;
+}
 .section_start {
 	padding-top: 30px;
 }
@@ -47,6 +51,9 @@ li:before {
 }
 .centered {
 	margin: auto;
+}
+.clickable {
+	cursor: pointer;
 }
 .text_centered {
 	text-align: center;

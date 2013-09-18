@@ -10,6 +10,7 @@
 			<script src="../../assets/js/html5shiv.js"></script>
 			<script src="../../assets/js/respond.min.js"></script>
 		<![endif]-->
+		<!-- Do not add javascripts here unless really needed - they slow down the page. -->
 	</head>
 	<body>
 		<!-- Header -->
@@ -23,7 +24,10 @@
 		<div class="jumbotron background_light_green">
 			<div class="container">
 				<h1 class="text_centered"><em class="text_white">A mobile CRM for a mobile world</em></h1>
-				<img src="images/ipadframe.png" class="centered img-responsive" alt="wylei video">
+				<img id="video_image" src="images/ipadframe.png" class="centered img-responsive clickable" alt="wylei video">
+				<div id="video_container" class="video_container">
+					<iframe id="wyleivideo" style="z-index: 1000000; width: 100%; height: 100%" src="http://www.youtube.com/embed/4yYLyjMY4FI?autoplay=1"></iframe>
+				</div>
 			</div>
 		</div>
 
@@ -253,6 +257,7 @@
 		<!-- JavaScripts Here -->
 		<script src="//code.jquery.com/jquery.js"></script>
 		<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+		<script src="js/index.js"></script>
 	</body>
 
 </html>
