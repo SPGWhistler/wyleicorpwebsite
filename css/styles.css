@@ -17,11 +17,17 @@ button {
 	padding: 0;
 	background: none;
 }
+.container {
+	max-width: 900px;
+}
 .bullet_green {
 	background-image: url('../images/bullet_green.png');
 }
 .jumbotron {
 	background-color: transparent;
+	margin-bottom: 0;
+	padding-top: 24px;
+	padding-bottom: 24px;
 }
 .row {
 	background: #fff;
