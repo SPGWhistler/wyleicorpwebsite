@@ -1,6 +1,25 @@
 body {
 	background: #eae9e9;
 }
+h1, h2, h3, h4, h5 {
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	font-weight: bold;
+}
+h1 {
+	font-size: 80px;
+}
+h2 {
+	font-size: 72px;
+}
+h3 {
+	font-size: 52px;
+}
+h4 {
+	font-size: 48px;
+}
+h5 {
+	font-size: 32px;
+}
 ul {
 	list-style-type: none;
 	padding: 0;
@@ -9,9 +28,8 @@ ul {
 li {
 	background-image: url('../images/bullet.png');
 	background-repeat: no-repeat;
-	background-position: 0 0;
-	padding-left: 32px;
-	line-height: 29px;
+	background-position: 0 2px;
+	padding-left: 17px;
 }
 button {
 	padding: 0;
