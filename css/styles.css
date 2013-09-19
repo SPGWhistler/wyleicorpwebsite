@@ -91,6 +91,7 @@ button {
 	padding-bottom: 10px;
 }
 .divide {
+	background: transparent;
 	width: 100%;
 }
 .body_text {
