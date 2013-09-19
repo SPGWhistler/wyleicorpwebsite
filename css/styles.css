@@ -56,6 +56,9 @@ button {
 .row {
 	background: #fff;
 }
+.img-responsive {
+	width: 100%;
+}
 .col-md-12 {
 	padding-left: 20px;
 	padding-right: 20px;

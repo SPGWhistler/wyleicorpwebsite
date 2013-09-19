@@ -36,6 +36,7 @@
 				$vc = $('.vertical_centered');
 				$vc.each(function (index, elmt) {
 					var height = $(elmt).parent().parent().find('div.col-xs-9').height();
+					console.log(height);
 					$(elmt).height(height);
 				});
 			}
