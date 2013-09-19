@@ -4,7 +4,12 @@
 		$('#button_back').click(function () {
 			window.location = 'index.html';
 		});
-		$('#button_submit').click(function () {
+		$('#contact_form').submit(function (e) {
+			if ($('#name').val() === '' || $('#email').val() === '') {
+				e.preventDefault();
+				return false;
+			}
+			return true;
 		});
 	});
 }());

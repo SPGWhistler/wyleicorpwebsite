@@ -1,0 +1,3 @@
+[submodule "classes/phpmailer"]
+	path = classes/phpmailer
+	url = https://github.com/Synchro/PHPMailer

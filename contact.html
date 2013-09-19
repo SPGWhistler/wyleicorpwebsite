@@ -17,7 +17,7 @@
 		<!-- Header -->
 		<div class="jumbotron header">
 			<div class="container">
-				<img src="images/header_logo.png" class="centered img-responsive" alt="wylei">
+				<img src="images/header_logo.png" class="centered img-responsive header_img" alt="wylei">
 			</div>
 		</div>
 		<!-- Back Button -->
@@ -26,28 +26,27 @@
 		</div>
 		<div class="container">
 			<!-- Section Start -->
-			<div class="row section_start">
+			<div class="row section_start centered">
 				<div class="col-md-12 clearfix">
-						<h1 class="text_light_green"><em>Thanks for your interest in us.</em></h1>
-
+					<h4 class="text_light_green"><em>Thanks for your interest in us.</em></h4>
 					<p class="lead text_gray">Please provide us with some information and a sales rep will be with you shortly.</p>
 				</div>
 			</div>
-			<div class="row section_end">
+			<div class="row section_end centered">
 				<div class="clearfix">
 					<div class="col-md-12">
-						<form role="form">
+						<form id="contact_form" role="form" method="GET" action="contact.php">
 							<div class="form-group">
 								<label class="sr-only" for="name">name</label>
-								<input type="text" class="form-control" id="name" placeholder="name">
+								<input type="text" class="form-control" name="name" id="name" placeholder="name">
 							</div>
 							<div class="form-group">
 								<label class="sr-only" for="email">email address</label>
-								<input type="text" class="form-control" id="email" placeholder="email address">
+								<input type="text" class="form-control" name="email" id="email" placeholder="email address">
 							</div>
 							<div class="form-group">
 								<label class="sr-only" for="phone">phone</label>
-								<input type="text" class="form-control inline" id="phone" placeholder="phone"> (optional)
+								<input type="text" class="form-control inline" name="phone" id="phone" placeholder="phone"> (optional)
 							</div>
 							<div>
 								<button id="button_submit" type="submit" class="btn btn-success btn-lg">Submit</button>
@@ -56,7 +55,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row centered">
 				<div class="divide">
 					<img src="images/divide_last.png" class="img-responsive" style="width: 100%;" alt="">
 				</div>
@@ -65,7 +64,7 @@
 		<!-- Footer -->
 		<div class="jumbotron footer">
 			<div class="container">
-				<img src="images/header_logo.png" class="centered img-responsive" alt="wylei">
+				<img src="images/header_logo.png" class="centered img-responsive footer_img" alt="wylei">
 			</div>
 		</div>
 		<!-- JavaScripts Here -->
