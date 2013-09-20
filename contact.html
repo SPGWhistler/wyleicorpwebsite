@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Wylei</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/styles.css">
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="../../assets/js/html5shiv.js"></script>
+			<script src="../../assets/js/respond.min.js"></script>
+		<![endif]-->
+		<!-- Do not add javascripts here unless really needed - they slow down the page.
+		-->
+	</head>
+	<body>
+		<!-- Header -->
+		<div class="jumbotron header">
+			<div class="container">
+				<img src="images/header_logo.png" class="centered img-responsive header_img" alt="wylei">
+			</div>
+		</div>
+		<!-- Back Button -->
+		<div class="login_signup text_centered">
+			<button id="button_back" type="button" class="btn btn-default btn-lg">&lt; Back</button>
+		</div>
+		<div class="container">
+			<!-- Section Start -->
+			<div class="row section_start centered">
+				<div class="col-md-12 clearfix">
+					<h4 class="text_light_green"><em>Thanks for your interest in us.</em></h4>
+					<p class="lead text_gray">Please provide us with some information and a sales rep will be with you shortly.</p>
+				</div>
+			</div>
+			<div class="row section_end centered">
+				<div class="clearfix">
+					<div class="col-md-12">
+						<form id="contact_form" role="form" method="GET" action="contact.php">
+							<div class="form-group">
+								<label class="sr-only" for="name">name</label>
+								<input type="text" class="form-control" name="name" id="name" placeholder="name">
+							</div>
+							<div class="form-group">
+								<label class="sr-only" for="email">email address</label>
+								<input type="text" class="form-control" name="email" id="email" placeholder="email address">
+							</div>
+							<div class="form-group">
+								<label class="sr-only" for="phone">phone</label>
+								<input type="text" class="form-control inline" name="phone" id="phone" placeholder="phone"> (optional)
+							</div>
+							<div>
+								<button id="button_submit" type="submit" class="btn btn-success btn-lg">Submit</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="row centered">
+				<div class="divide">
+					<img src="images/divide_last.png" class="img-responsive" style="width: 100%;" alt="">
+				</div>
+			</div>
+		</div>
+		<!-- Footer -->
+		<div class="jumbotron footer">
+			<div class="container">
+				<img src="images/header_logo.png" class="centered img-responsive footer_img" alt="wylei">
+			</div>
+		</div>
+		<!-- JavaScripts Here -->
+		<script src="//code.jquery.com/jquery.js"></script>
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+		<script src="js/contact.js"></script>
+	</body>
+
+</html>

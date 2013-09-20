@@ -1,0 +1,14 @@
+.headerlogo {
+    border: 0px;
+    display: block;
+    width: 300px;
+    padding: 20px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    content: url('../images/ipad/ipad_header_logo.png');
+}
+.headertext {
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+}

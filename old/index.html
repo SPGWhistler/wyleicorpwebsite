@@ -1,0 +1,351 @@
+﻿<!DOCTYPE html>
+<!--HTML5 doctype-->
+<html>
+<head>
+    <title>Corporate Website</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta http-equiv="Pragma" content="no-cache">
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+     <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+     <script src="js/jquery.fittext.js"></script>
+
+    <link href="css/icons.css" rel="stylesheet" type="text/css" />
+    <link href="css/af.ui.css" rel="stylesheet" type="text/css" />
+    <link href="css/signin.css" rel="stylesheet" type="text/css" />
+    <link href="css/custom.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+
+
+
+    <script type="text/javascript">
+
+        function loadjscssfile(filename, filetype) {
+            if (filetype == "js") {
+                var fileref = document.createElement('script')
+                fileref.setAttribute("type", "text/javascript")
+                fileref.setAttribute("src", filename)
+            }
+            else if (filetype == "css") {
+                var fileref = document.createElement("link")
+                fileref.setAttribute("rel", "stylesheet")
+                fileref.setAttribute("type", "text/css")
+                fileref.setAttribute("href", filename)
+            }
+            if (typeof fileref != "undefined")
+                document.getElementsByTagName("head")[0].appendChild(fileref)
+        }
+
+        $(window).on("orientationchange", function (event) {
+            var videoWidth = $(".video").width()
+            setTimeout(fixHeight, 200);
+        });
+
+        var fixHeight = function () {
+
+            var videoWidth = $(".video").width()
+            $(".outerFrame").css("height", videoWidth * (.7038) + 'px')
+            $(".outerFrame").css("width", videoWidth - ((10 / 100) * videoWidth) + 'px')
+
+        };
+
+        $(function () {
+
+            $(".fittext1").fitText();
+
+            var videoWidth = $(".video").width()
+            $(".outerFrame").css("height", videoWidth * (.7038) + 'px')
+            // $("#wyleivideo").hide();
+            var windoWidth = $(window).width();
+            var windoHeight = $(window).height();
+            if ($(window).width() > 1210) {
+                //desktop view
+                $(".headertext").css("font-size", "57px");
+                $(".destopView").css("width", "960px");
+              //  $(".outerFrame").css("padding-top", "75px");
+                //$(".video").css("width", $(window).width() - ($(window).width() / 4) + "px");
+                //$(".video").css("height", ($(window).height() + 80) + "px");
+                $(".headerlogo").attr("src", "images/ipad/ipad_header_logo.png");
+                $(".callout").attr("src", "images/ipad/ipad_callout_diagnose.png");
+                $(".dote").css("width", "35%");
+                $(".footerImg").attr("src", "images/ipad/ipad_footer_logo.png");
+            }
+
+            if (windoWidth < 680) {
+                loadjscssfile("css/Iphone.css", "css")
+            }
+            else {
+                loadjscssfile("css/Ipad.css", "css")
+
+            }
+        });
+        function showWyleiVideo() {
+            $("#wyleivideo").show();
+            // var videoHeight = $(".video").height();
+            // $(".outerFrame").css("height", '600px');
+            //$("iframe#wyleivideo").attr("src", $("iframe#wyleivideo").attr("src").replace("autoplay=0", "autoplay=1"))
+            // $("iframe#wyleivideo").playVideo();
+        }
+    </script>
+
+</head>
+<body style="padding-top: 0px">
+    <table width="100%">
+        <tr class="trHeader">
+            <td>
+                <div style="width: 96%; text-align: center; margin: 0px auto">
+                    <img class="headerlogo" />
+                </div>
+            </td>
+        </tr>
+        <tr style="background-color: #4ba7b1">
+            <td>
+
+                <div style="text-align: center; margin-top: 20px; width: 100%">
+                    <span class="headertext"><i>A mobile CRM for a mobile world</i></span>
+                </div>
+                <div style="text-align: center; margin-top: 2px; width: 100%">
+                    <div onclick="showWyleiVideo();" class="video" style="width: 80%; height: 0; background-size: 100%; padding-bottom: 70%;">
+                        <div class="outerFrame" style="width: 82%; margin: 0px auto; padding-top: 8%;  background-size: 100%; ">
+                           <!-- <iframe id="wyleivideo" style="z-index: 1000000; width: 100%; height: 100%"
+                                src="http://www.youtube.com/embed/4yYLyjMY4FI?autoplay=0"></iframe>-->
+                        </div>
+                    </div>
+                    <br />
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: #eeebeb">
+
+                <table class="destopView">
+
+
+                    <tr style="background-color: #EEEBEB">
+                        <td>
+                            <div style="background-color: #EEEBEB; width: 100%; text-align: center; ">
+                                <span class="spnHeading"><i>Wylei helps you develop a</i></span><br />
+                                <span class="spnHeading1"><i>comprehensive mobile</i></span><br />
+                                <span class="spnHeading1"><i>engagement strategy</i></span><br />
+                                <span class="spnHeading2"><i>no matter where you are today.</i></span><br />
+                                <div style="background-color: #EEEBEB; width: 100%; text-align: center;">
+                                    <img class="dote" style="width: 35%" src="images/dots.png" />
+                                </div>
+                                <br />
+                                <div style="background-color: #EEEBEB; width: 82%; text-align: center; margin-top: 30px;margin:0px auto">
+                                    <img style="width: 95%" src="images/ipad_cycle.png" />
+                                </div>
+                            </div>
+
+
+                        </td>
+                    </tr>
+                    <tr style="background-color: #EEEBEB">
+                        <td style="vertical-align: top">
+                            <img style="width: 100%" src="images/top.png" />
+                            <div style="background-color: white; width: 88%; text-align: center; margin-top: 30px; padding-top: 50px; margin: 0px auto">
+
+                                <div style="float: left; width: 32%; padding-left: 20px">
+                                    <img class="callout" />
+                                </div>
+                                <div style="float: left; padding-left: 30px;padding-right: 10px; text-align: left; width: 68%; margin-top: -30px">
+                                    <div style="text-align:left"  class="spnDiagnose"><i>Diagnose</i></div><br />
+                                    <span class="spnDiagnose1">Identify & measure your crucial metrics</span><br />
+                                </div>
+                                <div style="clear: both"></div>
+
+                                <div style="background-color: white; padding-left: 20px;padding-right: 20px; text-align: left; margin-top: 30px; margin: 0px auto">
+                                    <span class="spnDiagnose2">WYLEI helps you define the Key metrics for your mobile
+                                        user experience and gives you the capability to track them over time.
+                                    </span>
+                                    <br />
+
+                                    <div style="background-color: white; width: 100%; text-align: center; margin-top: 30px; margin: 0px auto">
+                                        <hr />
+                                    </div>
+                                    <ul style="margin-left: 30px">
+                                        <li>Conduct mobile behavioral research.</li>
+                                        <li>Learn the intent behind each mobile touch.</li>
+                                        <li>Develop the right mobile metrics for your business.</li>
+
+                                    </ul>
+
+                                </div>
+
+                                <img style="width: 100%" src="images/ipad_divide_next.png" />
+                            </div>
+                        </td>
+
+                    </tr>
+                    <tr style="background-color: #EEEBEB">
+                        <td>
+                            <div style="background-color: white; width: 88%; text-align: center; margin-top: 30px; padding-top: 50px; margin: 0px auto">
+                                <div style="float: left; padding-left: 20px; width: 32%">
+                                    <img style="width: 98%" src="images/ipad_callout_centralize.png" />
+                                </div>
+                                <div style="float: left; text-align: left; padding-left: 30px;padding-right: 10px; width: 68%; margin-top: -30px">
+                                    <span class="spnDiagnose"><i>Centralize</i></span><br />
+                                    <span class="spnDiagnose1">Hold all your customer data in our cloud</span>
+                                    <br />
+                                </div>
+                                <div style="clear: both"></div>
+
+                                <div style="background-color: white; padding-left: 20px;padding-right: 20px; text-align: left; margin-top: 30px; margin: 0px auto">
+                                    <span class="spnDiagnose2">Whether customer data already 
+                                        exists in piecemeal across your enterprise, or whether you're starting from scratch, WYLEI
+                                        brings it all together so you can understand your mobile customers, now.
+
+                                    </span>
+                                    <br />
+                                    <div style="background-color: white; width: 100%; text-align: center; margin-top: 30px; margin: 0px auto">
+                                        <hr />
+                                    </div>
+                                    <ul style="margin-left: 30px">
+                                        <li>Track your customer's mobile behavior.</li>
+                                        <li>Link mobile usage to other customer datasets.</li>
+                                        <li>Get up and running in one day.</li>
+                                    </ul>
+
+                                </div>
+
+                                <img style="width: 100%" src="images/ipad_divide_next.png" />
+                            </div>
+                        </td>
+
+                    </tr>
+                    <tr style="background-color: #EEEBEB">
+                        <td>
+                            <div style="background-color: white; width: 88%; text-align: center; margin-top: 30px; padding-top: 50px; margin: 0px auto">
+                                <div style="float: left; padding-left: 20px; width: 32%">
+                                    <img style="width: 98%" src="images/ipad_callout_analyze.png" />
+                                </div>
+                                <div style="float: left; text-align: left; padding-left: 30px;padding-right: 10px; width: 68%; margin-top: -30px">
+                                    <span class="spnDiagnose"><i>Analyze</i></span><br />
+                                    <span class="spnDiagnose1">Glean actionable insights from your data</span>
+
+                                    <br />
+                                </div>
+                                <div style="clear: both"></div>
+
+                                <div style="background-color: white; padding-left: 20px;padding-right: 20px; text-align: left; margin-top: 30px; margin: 0px auto">
+                                    <span class="spnDiagnose2">WYLEI can help you understand 
+                                    what your mobile experience data is telling you and provide specific recommendations for 
+                                     engaging and monetizing more personally.
+
+                                    </span>
+                                    <br />
+
+                                    <div style="background-color: white; width: 100%; text-align: center; margin-top: 30px; margin: 0px auto">
+                                        <hr />
+                                    </div>
+                                    <ul style="margin-left: 30px">
+                                        <li>Learn the true net impact of any mobile customer initiative.</li>
+                                        <li>Understand which customers respond best to which offers.</li>
+                                        <li>Define a comprehensive mobile engagement plan for each user.</li>
+                                    </ul>
+
+                                </div>
+
+                                <img style="width: 100%" src="images/ipad_divide_next.png" />
+                            </div>
+                        </td>
+
+                    </tr>
+                    <tr style="background-color: #EEEBEB">
+                        <td>
+                            <div style="background-color: white; width: 88%; text-align: center; margin-top: 30px; padding-top: 50px; margin: 0px auto">
+                                <div style="float: left; padding-left: 20px; width: 32%">
+                                    <img style="width: 98%" src="images/ipad_callout_execute.png" />
+                                </div>
+                                <div style="float: left; text-align: left; padding-left: 30px;padding-right: 10px; width: 68%; margin-top: -30px">
+                                    <span class="spnDiagnose"><i>Execute</i></span><br />
+                                    <span class="spnDiagnose1">Interact with your customers on their mobile devices </span>
+
+                                    <br />
+                                </div>
+                                <div style="clear: both"></div>
+                                <div style="background-color: white; padding-left: 20px;padding-right: 20px; text-align: left; margin-top: 30px; margin: 0px auto">
+                                    <span class="spnDiagnose2">However you want to engage 
+                                        your mobile user, WYLEI leverages appMobi's best-in-class cross-platform cloud services to eliminate 
+                                        friction. Whether you need to contact your customer, ask them a question, accept a payment, or practically 
+                                        anything else, WYLEI has the heavy lifting covered.
+                                    </span>
+                                    <br />
+
+                                    <div style="background-color: white; width: 100%; text-align: center; margin-top: 30px; margin: 0px auto">
+                                        <hr />
+                                    </div>
+                                    <ul style="margin-left: 30px">
+                                        <li>Send a push message to any device on any platform.</li>
+                                        <li>Ask a question.</li>
+                                        <li>Sugget a feedback post / tweet / tumblr post.</li>
+                                        <li>Give a reward.</li>
+                                        <li>Offer a frictionless, one-touch purchase.</li>
+                                    </ul>
+
+                                </div>
+
+                                <img style="width: 100%" src="images/ipad_divide_next.png" />
+                            </div>
+                        </td>
+
+                    </tr>
+                    <tr style="background-color: #EEEBEB">
+                        <td>
+                            <div style="background-color: white; width: 88%; text-align: center; margin-top: 30px; padding-top: 50px; margin: 0px auto">
+                                <div style="float: left; padding-left: 20px; width: 32%">
+                                    <img style="width: 98%" src="images/ipad_callout_automate.png" />
+                                </div>
+                                <div style="float: left; text-align: left; padding-left: 30px;padding-right: 10px; width: 68%; margin-top: -30px">
+                                    <span class="spnAutomate"><i>Automate</i></span><br />
+                                    <span class="spnAutomate1">All of the above - automatically.</span>
+
+                                    <br />
+                                </div>
+                                <div style="clear: both"></div>
+                                <div style="background-color: white; padding-left: 20px;padding-right: 20px; text-align: left; margin-top: 30px; margin: 0px auto">
+                                    <span class="spnAutomate2">WYLEI employs advanced 
+                                        machine learning techniques to turn the mobile engagement process into continuous improvment. The 
+                                        end result is an autonomous mobile CRM with more engaged customers.
+                                    </span>
+                                    <br />
+                                    <div style="background-color: white; width: 100%; text-align: center; margin-top: 30px; margin: 0px auto">
+                                        <hr />
+                                    </div>
+                                    <ul style="margin-left: 30px">
+                                        <li class="greenli">Autonomously run A/B tests.</li>
+                                        <li class="greenli">Harvest value from day one automatically engage.</li>
+                                        <li class="greenli">Each user with a personalized strategy.</li>
+                                        <li class="greenli">Manage it all from your mobile device.</li>
+
+                                    </ul>
+                                    <hr />
+                                </div>
+                                <img style="width: 100%" src="images/ipad_divide_last.png" />
+                            </div>
+                        </td>
+
+                    </tr>
+                </table>
+            </td>
+
+        </tr>
+
+
+
+        <tr style="background-color: #EEEBEB">
+            <td>
+                <br />
+                <div style="background-color: #727272; width: 100%; text-align: center; margin-top: 20px; margin: 0px auto; height: 10px">
+                </div>
+                <br />
+
+                <div class="footerDiv">
+                    <img class="footerImg" />
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

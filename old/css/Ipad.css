@@ -1,0 +1,133 @@
+
+ul li {
+    color: #636464;
+    font-size: 25px;
+    list-style-type: none;
+}
+
+.divmargin {
+    margin-top: -30px
+}
+
+li {
+    list-style-image: url(../images/ipad/ipad_bullet.png);
+    padding: 10px;
+}
+
+.greenli {
+    list-style-image: url(../images/ipad/ipad_greenbullet.png);
+    padding: 10px;
+}
+
+.headerlogo {
+    border: 0px;
+    display: block;
+    padding: 20px;
+    margin: 0 auto;
+    content: url('../images/ipad/ipad_header_logo.png');
+    margin: 0px auto;
+}
+
+.headertext {
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.video {
+    width: 96%;
+   
+    background-image: url('../images/ipad/ipad_videoscreen.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 0px auto;
+}
+
+
+.trHeader {
+    background-color: #1c2526;
+}
+
+.spnHeading {
+    font-size: 50px;
+    color: #727272;
+    font-weight: bold;
+}
+
+.spnHeading1 {
+    font-size: 55px;
+    color: #4ba7b1;
+    font-weight: bold;
+}
+
+.spnHeading2 {
+    font-size: 32px;
+    color: #727272;
+    font-weight: bold;
+}
+
+.callout {
+    width: 98%;
+    content: url('../images/ipad/ipad_callout_diagnose.png');
+}
+
+.spnDiagnose {
+    font-size: 62px;
+    color: #4ba7b1;
+    text-align: center;
+    font-weight: bold;
+}
+
+.spnDiagnose1 {
+    font-size: 32px;
+    color: #47757a;
+    text-align: center;
+    font-weight: bold;
+}
+
+.spnDiagnose2 {
+    font-size: 25px;
+    color: #47757a;
+    text-align: left;
+}
+
+.spnAutomate {
+    font-size: 62px;
+    color: #96c93f;
+    text-align: center;
+    font-weight: bold;
+}
+
+.spnAutomate1 {
+    font-size: 32px;
+    color: #667c41;
+    text-align: center;
+    font-weight: bold;
+}
+
+.spnAutomate2 {
+    font-size: 25px;
+    color: #667c41;
+    text-align: left;
+}
+
+.footerImg {
+    border: 0px;
+    display: block;
+    margin: 0 auto;
+    content: url('../images/ipad/ipad_footer_logo.png');
+    margin: 0px auto;
+    padding: 20px;
+}
+
+.footerDiv {
+    background-color: #727272;
+}
+
+.divmargin {
+    float: left;
+    text-align: left;
+    padding-left: 30px;
+    width: 68%;
+    margin-top: -30px;
+}
