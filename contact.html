@@ -20,32 +20,28 @@
 				<img src="images/header_logo.png" class="centered img-responsive header_img" alt="wylei">
 			</div>
 		</div>
-		<div>
-			&nbsp;
-		</div>
+		<div>&nbsp;</div>
 		<div class="container">
 			<!-- Section Start -->
 			<div class="row section_start centered">
 				<div class="col-md-12 clearfix">
-					<h4 class="text_light_green"><em>Thanks for your interest.</em></h4>
+						<h4 class="text_light_green"><em>Thanks for your interest.</em></h4>
+
 					<p class="lead text_gray">Please provide us with your contact information and we'll be in touch with you shortly.</p>
 				</div>
 			</div>
 			<div class="row section_end centered">
 				<div class="clearfix">
 					<div class="col-md-12">
-						<form id="contact_form" role="form" method="GET" action="contact.php">
+						<form id="contact_form" role="form">
 							<div class="form-group">
 								<label class="sr-only" for="name">name</label>
 								<input type="text" class="form-control" name="name" id="name" placeholder="name">
 							</div>
 							<div class="form-group">
 								<label class="sr-only" for="email">email address</label>
-								<input type="text" class="form-control" name="email" id="email" placeholder="email address">
-							</div>
-							<div class="form-group">
-								<label class="sr-only" for="phone">phone</label>
-								<input type="text" class="form-control inline" name="phone" id="phone" placeholder="phone"> (optional)
+								<input type="text" class="form-control" name="email" id="email"
+								placeholder="email address">
 							</div>
 							<div>
 								<button id="button_submit" type="submit" class="btn btn-submit">Submit</button>
@@ -55,7 +51,7 @@
 				</div>
 			</div>
 			<div class="row centered divide">
-					<img src="images/divide_last.png" class="img-responsive" style="width: 100%;" alt="">
+				<img src="images/divide_last.png" class="img-responsive" style="width: 100%;" alt="">
 			</div>
 		</div>
 		<!-- Back Button -->
@@ -68,6 +64,23 @@
 				<img src="images/header_logo.png" class="centered img-responsive footer_img" alt="wylei">
 			</div>
 		</div>
+
+		<!-- Modal -->
+		<div class="modal fade" id="thanks_modal" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title">Thanks</h4>
+					</div>
+					<div class="modal-body">Thank you. Someone will be contacting you soon.</div>
+					<div class="modal-footer">
+						<button id="ok" type="button" class="btn btn-primary" data-dismiss="modal">Ok</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<!-- JavaScripts Here -->
 		<script src="//code.jquery.com/jquery.js"></script>
 		<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>

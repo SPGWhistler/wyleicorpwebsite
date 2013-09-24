@@ -3,7 +3,6 @@ include "classes/phpmailer/class.SMTP.php";
 include "classes/phpmailer/class.phpmailer.php";
 $mail = new PHPMailer;
 $mail->IsSMTP();
-$mail->SMTPDebug = 2;
 $mail->Host = 'email-smtp.us-east-1.amazonaws.com';
 $mail->SMTPAuth = true;
 $mail->Username = 'AKIAJSWUXNDIETFEUVGQ';
@@ -19,9 +18,8 @@ $mail->Subject = 'Wylei Contact Form';
 $body = "";
 $body .= " name: " . $_GET['name'] . "<br>\n";
 $body .= " email: " . $_GET['email'] . "<br>\n";
-$body .= "phone: " . $_GET['phone'] . "<br>\n";
 $mail->Body = $body;
 $mail->AltBody = $body;
 $mail->Send();
-header('Location: index.html');
+echo $_GET['callback'] . '({"success":true});';
 ?>

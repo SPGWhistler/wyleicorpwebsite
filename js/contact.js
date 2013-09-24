@@ -5,11 +5,27 @@
 			window.location = 'index.html';
 		});
 		$('#contact_form').submit(function (e) {
-			if ($('#name').val() === '' || $('#email').val() === '') {
-				e.preventDefault();
-				return false;
+			e.preventDefault();
+			var $name, $email;
+			$name = $('#name');
+			$email = $('#email');
+			if ($name.val() !== '' && $email.val() !== '') {
+				$.ajax({
+					url: 'contact.php',
+					dataType: "jsonp",
+					data: {
+						'name' : $name.val(),
+						'email' : $email.val()
+					},
+					success: function () {
+						$('#thanks_modal').modal();
+					}
+				});
 			}
-			return true;
+			return false;
+		});
+		$('#ok').click(function () {
+			window.location = 'index.html';
 		});
 	});
 }());
