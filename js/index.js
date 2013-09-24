@@ -42,7 +42,7 @@
 			}
 			redraw = false;
 		}, 100);
-		$('#button_login_signup').click(function () {
+		$('.btn-login-signup').click(function () {
 			window.location = 'contact.html';
 		});
 	});

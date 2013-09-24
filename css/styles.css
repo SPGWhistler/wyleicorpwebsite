@@ -40,6 +40,28 @@ li.no_bullet {
 button {
 	padding: 0;
 	background: none;
+	font-family: "Century Gothic", CenturyGothic, Helvetica, AppleGothic, sans-serif;
+	font-style: italic;
+}
+.btn-login-signup {
+	background: #93cb2f;
+	color: #fff;
+	padding: 5px 30px 5px 30px;
+	font-size: 22px;
+}
+.btn-login-signup:hover, .btn-login-signup.btn:focus {
+	color: #fff;
+	background: #7EAD28;
+}
+.btn-submit {
+	background: #93cb2f;
+	color: #fff;
+	padding: 5px 30px 5px 30px;
+	font-size: 22px;
+}
+.btn-submit:hover, .btn-submit.btn:focus {
+	color: #fff;
+	background: #7EAD28;
 }
 .container {
 	max-width: 900px;
@@ -52,6 +74,41 @@ button {
 	margin-bottom: 0;
 	padding-top: 24px;
 	padding-bottom: 24px;
+}
+#cycle_diagnose {
+	position: absolute;
+	width: 28.5%;
+	height: 31%;
+	top: 0;
+	left: 35.5%;
+}
+#cycle_execute {
+	position: absolute;
+	width: 32.5%;
+	height: 29%;
+	top: 36%;
+	left: 0;
+}
+#cycle_automate {
+	position: absolute;
+	width: 28.5%;
+	height: 29%;
+	top: 36%;
+	left: 35.5%;
+}
+#cycle_centralize {
+	position: absolute;
+	width: 32.5%;
+	height: 29%;
+	top: 36%;
+	left: 67.5%;
+}
+#cycle_analyze {
+	position: absolute;
+	width: 28.5%;
+	height: 31%;
+	top: 69%;
+	left: 35.5%;
 }
 .row {
 	background: #fff;
@@ -160,6 +217,10 @@ button {
 		line-height: 32px;
 		margin: 0;
 	}
+	.btn-login-signup {
+		padding: 5px 50px 5px 50px;
+		font-size: 24px;
+	}
 }
 @media (min-width: 480px) {
 	h1, .jumbotron h1 {
@@ -182,6 +243,10 @@ button {
 	}
 	li {
 		font-size: 16px;
+	}
+	.btn-login-signup {
+		padding: 5px 50px 5px 50px;
+		font-size: 26px;
 	}
 	.row {
 		max-width: 680px;
@@ -216,6 +281,10 @@ button {
 	li {
 		font-size: 16px;
 	}
+	.btn-login-signup {
+		padding: 10px 75px 10px 75px;
+		font-size: 30px;
+	}
 	.row {
 		max-width: 680px;
 	}
@@ -239,6 +308,10 @@ button {
 	h3 {
 		font-size: 46px;
 		line-height: 76px;
+	}
+	.btn-login-signup {
+		padding: 10px 75px 10px 75px;
+		font-size: 36px;
 	}
 	.row {
 		max-width: 870px;
