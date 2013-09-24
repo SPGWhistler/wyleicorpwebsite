@@ -24,8 +24,13 @@
 			}
 			return false;
 		});
-		$('#ok').click(function () {
+		$('#contact_ok').click(function () {
 			window.location = 'index.html';
+		});
+		$('#login_form').submit(function (e) {
+			e.preventDefault();
+			$('#login_modal').modal();
+			return false;
 		});
 	});
 }());
