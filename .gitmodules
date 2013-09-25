@@ -1,3 +1,9 @@
 [submodule "classes/phpmailer"]
 	path = classes/phpmailer
 	url = https://github.com/Synchro/PHPMailer
+[submodule "js/respond"]
+	path = js/respond
+	url = https://github.com/scottjehl/Respond
+[submodule "js/html5shiv"]
+	path = js/html5shiv
+	url = https://github.com/aFarkas/html5shiv
