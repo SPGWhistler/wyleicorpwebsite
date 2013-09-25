@@ -6,7 +6,7 @@ h1, h2, h3, h4, h5 {
 	font-weight: bold;
 }
 h1, .jumbotron h1 {
-	font-size: 26px;
+	font-size: 25px;
 	line-height: 32px;
 	margin: 0;
 }
@@ -200,9 +200,17 @@ button {
 	display: inline;
 	width: 50%;
 }
-#media (min-width: 403px) {
+.span-visible-xs {
+	display: inline !important;
+}
+@media (min-width: 768px) {
+	.span-visible-xs {
+		display: none !important;
+	}
+}
+@media (min-width: 403px) {
 	h1, .jumbotron h1 {
-		font-size: 28px;
+		font-size: 26px;
 		line-height: 32px;
 		margin: 0;
 	}
@@ -212,7 +220,7 @@ button {
 		margin: 0;
 	}
 	h3 {
-		font-size: 23px;
+		font-size: 19px;
 		line-height: 32px;
 		margin: 0;
 	}
@@ -223,7 +231,7 @@ button {
 }
 @media (min-width: 480px) {
 	h1, .jumbotron h1 {
-		font-size: 32px;
+		font-size: 31px;
 		line-height: 36px;
 	}
 	h2 {
