@@ -76,6 +76,7 @@ button {
 	padding-bottom: 24px;
 }
 #cycle_diagnose {
+	background: transparent url('../images/transparent.gif') 0 0 repeat;
 	position: absolute;
 	width: 28.5%;
 	height: 31%;
