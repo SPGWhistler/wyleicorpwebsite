@@ -34,61 +34,71 @@ li {
 	background-position: 0 2px;
 	padding-left: 24px;
 }
-li.no_bullet {
-	background-image: none;
-}
 .container {
 	max-width: 900px;
 }
-.jcarousel-skin-tango .jcarousel-container {
-	background: #fff;
+.carousel li {
+	background-image: none;
+}
+.flexslider {
 	border: none;
+	box-shadow: none;
+	margin-bottom: 20px;
 }
-.jcarousel-skin-tango .jcarousel-container-horizontal {
-	width: 100%;
-	padding-left: 0;
-	padding-right: 0;
-}
-.jcarousel-item {
-	background: none;
+.flexslider .slides > li {
 	border: 2px solid #eae9e9;
+	padding-left: 0;
 }
-.jcarousel-skin-tango .jcarousel-item {
-	width: 259px;
-	height: auto;
-	padding: 0;
-	margin-right: 5px;
-	position: relative;
-	left: 30px;
-}
-.jcarousel-skin-tango .jcarousel-clip-horizontal {
-	width: 100%;
-	height: 154px;
-}
-.jcarousel-skin-tango .jcarousel-next-horizontal, .jcarousel-skin-tango .jcarousel-prev-horizontal {
-	top: 20px;
-	height: 154px;
+.flex-direction-nav a {
+	display: none;
 	width: 28px;
+	height: 154px;
+	margin: 0;
+	position: absolute;
+	top: 0;
+	z-index: 10;
+	overflow: hidden;
+	opacity: 0;
+	cursor: pointer;
+	text-shadow: none;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	transition: all .3s ease;
 }
-.jcarousel-skin-tango .jcarousel-prev-horizontal {
-	background: transparent url('../images/arrow_left.png') no-repeat 0 0;
-	left: 0;
+.flex-direction-nav a:before {
+	content: '';
 }
-.jcarousel-skin-tango .jcarousel-next-horizontal {
-	background: transparent url('../images/arrow_right.png') no-repeat 0 0;
+.flex-direction-nav a.flex-next:before {
+	content: '';
+}
+.flex-direction-nav a.flex-next {
+	background: url('../images/arrow_right.png') 0 0 no-repeat;
+}
+.flex-direction-nav a.flex-prev {
+	background: url('../images/arrow_left.png') 0 0 no-repeat;
+}
+.flex-direction-nav .flex-next {
 	right: 0;
+	opacity: 1;
 }
-.jcarousel-skin-tango .jcarousel-prev-horizontal:hover, .jcarousel-skin-tango .jcarousel-prev-horizontal:focus {
-	background-position: 0 0;
+.flexslider:hover .flex-next {
+	right: 0;
+	opacity: 1;
 }
-.jcarousel-skin-tango .jcarousel-next-horizontal:hover, .jcarousel-skin-tango .jcarousel-next-horizontal:focus {
-	background-position: 0 0;
+.flex-direction-nav .flex-prev {
+	left: 0;
+	opacity: 1;
+}
+.flexslider:hover .flex-prev {
+	left: 0;
+	opacity: 1;
 }
 .logo_carousel {
 	background: #fff;
 	max-width: 100%;
 	width: 100%;
 	padding: 0;
+	overflow: hidden;
 }
 .logo_carousel_text {
 	padding-top: 15px;
@@ -308,6 +318,9 @@ button {
 	li {
 		font-size: 16px;
 	}
+	.flex-direction-nav a {
+		display: block;
+	}
 	.btn-login-signup {
 		padding: 5px 50px 5px 50px;
 		font-size: 26px;
@@ -345,6 +358,9 @@ button {
 	li {
 		font-size: 16px;
 	}
+	.flex-direction-nav a {
+		display: block;
+	}
 	.btn-login-signup {
 		padding: 10px 75px 10px 75px;
 		font-size: 30px;
@@ -372,6 +388,9 @@ button {
 	h3 {
 		font-size: 46px;
 		line-height: 76px;
+	}
+	.flex-direction-nav a {
+		display: block;
 	}
 	.btn-login-signup {
 		padding: 10px 75px 10px 75px;

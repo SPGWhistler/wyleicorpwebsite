@@ -7,3 +7,6 @@
 [submodule "js/html5shiv"]
 	path = js/html5shiv
 	url = https://github.com/aFarkas/html5shiv
+[submodule "js/flexslider"]
+	path = js/flexslider
+	url = https://github.com/woothemes/FlexSlider
