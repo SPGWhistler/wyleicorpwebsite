@@ -47,6 +47,7 @@
 		$('#logo_carousel').jcarousel({
 			auto: 5,
 			scroll: 1,
+			start: 2,
 			wrap: 'circular'
 		});
 	});
