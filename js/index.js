@@ -44,5 +44,10 @@
 		$('.btn-login-signup').click(function () {
 			window.location = 'contact.html';
 		});
+		$('#logo_carousel').jcarousel({
+			auto: 5,
+			scroll: 1,
+			wrap: 'circular'
+		});
 	});
 }());
