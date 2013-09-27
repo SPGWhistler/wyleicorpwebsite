@@ -28,6 +28,7 @@
 			itemMargin: 5,
 			minItems: 4,
 			maxItems: 6,
+			move: 1,
 			controlNav: false,
 			slideshow: true,
 			startAt: 8,
