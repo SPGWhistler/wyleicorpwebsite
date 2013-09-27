@@ -34,6 +34,9 @@ li {
 	background-position: 0 2px;
 	padding-left: 24px;
 }
+li.no_bullet {
+	background: none;
+}
 .container {
 	max-width: 900px;
 }
