@@ -30,6 +30,7 @@
 			maxItems: 6,
 			controlNav: false,
 			slideshow: true,
+			startAt: 8,
 			prevText: "",
 			nextText: "",
 			start: function () {
