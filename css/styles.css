@@ -113,6 +113,9 @@ button {
 	font-family: "Century Gothic", CenturyGothic, Helvetica, AppleGothic, sans-serif;
 	font-style: italic;
 }
+.btn {
+	border-radius: 12px;
+}
 .btn-login-signup {
 	background: #93cb2f;
 	color: #fff;
