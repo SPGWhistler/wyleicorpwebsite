@@ -10,6 +10,7 @@
 			$video.css({
 				background: '#000'
 			});
+			$video.html('<iframe id="wyleivideo" style="z-index: 1000000; width: 100%; height: 100%" src="http://www.youtube.com/embed/bvEfZpLst3k?rel=0&autoplay=1"></iframe>');
 			$video.show();
 			video_visible = true;
 			redraw = true;
